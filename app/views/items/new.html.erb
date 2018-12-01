@@ -1,0 +1,30 @@
+<p><%= link_to "items", items_path %> / new item </p>
+
+<h1>Add an Item</h1>
+
+<%= form_for @item do |f| %>
+  <% if @item.errors.any? %>
+  <ul>
+    <% @item.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
+
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "What's it called?" %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :note %>
+    <%= f.text_area :note, placeholder: "Anything special about this?" %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :stored_at %>
+    <%= f.text_field :stored_at, placeholder: "Which storage bin?"%>
+  </fieldset>
+
+  <%= f.submit "Track It!" %>
+<% end%>

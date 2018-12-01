@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aggregate: one
+  aggregate_type: Aggregate
+  type: 
+  data: 
+  metadata: 
+
+two:
+  aggregate: two
+  aggregate_type: Aggregate
+  type: 
+  data: 
+  metadata: 

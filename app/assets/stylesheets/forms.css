@@ -1,0 +1,12 @@
+fieldset {
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+}
